@@ -1,0 +1,5 @@
+#postList1 {
+	height: 68vh;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}

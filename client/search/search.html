@@ -1,0 +1,18 @@
+<template name="search">
+	<div class="well well-large edit">
+		<label class="edit-info" for="posttext">Search User</label>
+		<input placeholder="Type the username to be searched" class="input-xxlarge user edit-info search" type="text" name="posttext" value="" id="posttext">
+	</div>
+	{{#each searchResult}}
+	{{>result}}
+	{{/each}}
+</template>
+
+<template name="result">
+	<div class="well well-lg">
+		 <img src="{{Propic}}" class="img-thumbnail img-responsive pull-left" width="304" height="236">
+		 <h4>{{name}}</h4>
+		 <p>{{location}}</p>
+		 <p>{{about}}</p>
+	</div>
+</template>

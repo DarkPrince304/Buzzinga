@@ -1,0 +1,24 @@
+<template name="navigationLoggedIn">
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<ul class="nav">
+				<li class="brand">Buzzinga</li>
+				<li><a href="/">Home</a></li>
+				<li><a href="/profile">Profile</a></li>
+				<li><a href="/about">About Us</a></li>
+				<li class="lgout"><a href="javascript:Meteor.logout(function(){})">Logout</a></li>
+			</ul>
+		</div>
+	</div>
+</template>
+
+<template name="navigationLoggedOut">
+	<div class="navbar navbar-static-top">
+		<div class="navbar-inner">
+			<a class="brand" href="#">Buzzinga</a>
+			<ul class="nav">
+				<li><a href="#">{{>loginButtons}}</a></li>
+			</ul>
+		</div>
+	</div>
+</template>

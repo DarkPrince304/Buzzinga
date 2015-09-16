@@ -1,0 +1,47 @@
+<template name="sidebar">
+	<ul class="nav nav-list favorites shortcut">
+		<li class="nav-header">FAVORITES</li>
+		<li><a href="/">News Feed</a></li>
+		<li><a href="#">Photos</a></li>
+		<li><a href="/edit">Edit Profile</a></li>
+		<li><a href="/search">Search</a></li>
+	</ul>
+	<ul class="nav nav-list best-friends shortcut">
+		<li class="nav-header">BEST FRIENDS</li>
+		<li><a href="/">Chandan</a></li>
+		<li><a href="#">Rahul</a></li>
+	</ul>
+	<ul class="nav nav-list family shortcut">
+		<li class="nav-header">FAMILY</li>
+		<li><a href="/">Nitish</a></li>
+		<li><a href="#">Sakshi</a></li>
+	</ul>
+</template>
+<template name="sidebar2">
+	<ul class="nav nav-list">
+		<li class="nav-header">FRIENDS</li>
+		<li><a href="/" data-toggle="modal" data-target="#myModal">Sanchit</a></li>
+		<li><a href="#">Utkarsh</a></li>
+	</ul>
+
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title"> {{Modal}} </h4>
+      </div>
+      <div class="modal-body">
+        <p>Some text in the modal.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</template>

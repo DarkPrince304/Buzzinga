@@ -1,0 +1,24 @@
+p {
+	padding-left: 5px;
+}
+
+p.commentText  {
+	margin-left: 60px;
+	font-size: 10pt;
+}
+
+.img-rounded {
+	box-shadow: 3px 3px 3px brown;
+}
+
+h4{
+	padding-left: 5px;
+}
+
+p.commentUser {
+	margin-left: 60px;
+}
+
+p.status {
+	font-size: 13pt;
+}

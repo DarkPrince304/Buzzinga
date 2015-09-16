@@ -1,0 +1,6 @@
+.tab-content {
+	width: 140vh;
+	height: 60vh;
+	overflow-y: scroll;
+	overflow-x: hidden;  
+}

@@ -1,0 +1,34 @@
+<template name="post">
+	<div class="media">
+		<a href="#" class="pull-left">
+			<img width="60px" src="{{propic}}" class="media-object img-rounded" data-src="holder.js/64x64">
+		</a>
+		<div class="media-body">
+			<h4>   {{username}}</h4>
+			<p class="status">{{text}}</p>
+			<div class="media">
+				{{#if likeCount}}<span class="badge badge-success">{{likeCount}}</span>
+				People Like This!
+				{{/if}}
+				<h4 class="media-heading">
+					<a class="likebtn muted"><small>Like</small></a>
+				</h4>
+				<ul class="unstyled">
+				{{#each postComments}}
+				{{>postcomment}}
+				{{/each}}	
+				</ul>
+				 <input class="comment input-xxlarge" type="text" name="comment" value="" placeholder="Write a comment..." id="comment">
+			</div>
+		</div>	
+	</div>
+</template>
+<template name="postcomment">
+	<li class="well">
+		<a class="pull-left" href="/user">
+		<img src="{{Propic}}" width="40px" class="img-rounded" />
+		</a>
+		<p class="muted commentUser"> {{username}} </p>
+		<p class="muted commentText">{{text}}</p>
+	</li>
+</template>
